@@ -1,0 +1,60 @@
+/* BalloonGame.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.balloon {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.balloon-image {
+  width: 100px; /* Adjust the size based on your preference */
+  height: 100px; /* Adjust the size based on your preference */
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Add any additional styles as needed */
